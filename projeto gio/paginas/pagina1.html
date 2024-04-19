@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagina1.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Artists</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img class="nav-logo" src="/imgs/logo.png" style="width: 200px" />
+        <ul class="nav-list">
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li>
+            <a class="artists" href="/paginas/pagina1.html">Artists</a>
+          </li>
+          <li>
+            <a class="about" href="/paginas/pagina2.html">About</a>
+          </li>
+          <li>
+            <a class="Product" href="/paginas/pagina3.html">Musics</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <h1>Formulário - Música</h1>
+
+          <p>
+            Sua opinião é importante para nós! Ajude-nos a melhorar nossa
+            plataforma musical preenchendo este formulário de feedback.
+          </p>
+
+          <form action="" method="post" id="feedbackForm">
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </fieldset>
+
+            <fieldset>
+              <legend>Sua Experiência</legend>
+
+              <label for="satisfaction"
+                >Quão satisfeito você está com a nossa plataforma
+                musical?</label
+              >
+              <select id="satisfaction" name="satisfaction" required>
+                <option value="">Selecione uma opção</option>
+                <option value="1">Muito insatisfeito</option>
+                <option value="2">Insatisfeito</option>
+                <option value="3">Neutro</option>
+                <option value="4">Satisfeito</option>
+                <option value="5">Muito satisfeito</option>
+              </select>
+
+              <label for="recommend"
+                >Você recomendaria nossa plataforma musical para outras
+                pessoas?</label
+              >
+              <input
+                type="radio"
+                id="recommendYes"
+                name="recommend"
+                value="sim"
+                required
+              />
+              <label for="recommendYes">Sim</label>
+              <input
+                type="radio"
+                id="recommendNo"
+                name="recommend"
+                value="não"
+                required
+              />
+              <label for="recommendNo">Não</label>
+
+              <label for="reason"
+                >Por que você recomendaria ou não nossa plataforma
+                musical?</label
+              >
+              <textarea
+                id="reason"
+                name="reason"
+                placeholder="Explique sua resposta"
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>Recursos e Conteúdo</legend>
+
+              <label for="favoriteGenre"
+                >Qual é o seu gênero musical favorito na nossa
+                plataforma?</label
+              >
+              <select id="favoriteGenre" name="favoriteGenre" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pop">Pop</option>
+                <option value="mpb">MPB</option>
+                <option value="rock">Rock</option>
+                <option value="sertanejo">Sertanejo</option>
+                <option value="electronica">Eletrônica</option>
+                <option value="other">Outro</option>
+              </select>
+
+              <label for="missingFeature"
+                >Há algum recurso que você gostaria de ver na nossa plataforma
+                musical?</label
+              >
+              <input type="text" id="missingFeature" name="missingFeature" />
+
+              <label for="suggestions"
+                >Você tem alguma sugestão para melhorar nossa plataforma
+                musical?</label
+              >
+              <textarea
+                id="suggestions"
+                name="suggestions"
+                placeholder="Suas sugestões são bem-vindas"
+              ></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar Feedback</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="texto">
+          <h2>Contato</h2>
+          <p>
+            <strong>Endereço:</strong>
+            <br />
+            Rua X, Nº 123, Bairro Y, Cidade Z, UF, CEP 12345-678
+            <br />
+            <strong>Telefone:</strong> (61) 1234-5678
+            <br />
+            <strong>E-mail:</strong> music@gmail.com
+          </p>
+        </div>
+        <div class="icones">
+          <a href="#"
+            ><img
+              class="logo"
+              src="/imgs/facebook.png"
+              alt="Facebook"
+            />Facebook</a
+          >
+          <a href="#"
+            ><img
+              class="logo"
+              src="/imgs/instagram.png"
+              alt="Instagram"
+            />Instagram</a
+          >
+          <a href="#"
+            ><img class="logo" src="/imgs/twitter.png" alt="Twitter" />Twitter</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
